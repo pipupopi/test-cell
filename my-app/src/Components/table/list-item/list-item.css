@@ -1,0 +1,15 @@
+.list_item_wrapper {
+  width: 100%;
+  height: auto;
+  font-size: 1em;
+}
+@media screen and (max-width: 768px) {
+  .list_item_wrapper {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 425px) {
+  .list_item_wrapper {
+    font-size: 0.9em;
+  }
+}

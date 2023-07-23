@@ -1,0 +1,43 @@
+.search_wrapper {
+  max-width: 630px;
+  height: 52px;
+  background-color: #5a5c66;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search_wrapper button {
+  border: none;
+  background-color: inherit;
+  width: inherit;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search_wrapper input {
+  width: inherit;
+  height: 30px;
+  margin: 10px 0px 0px 20px;
+  color: #fff;
+  background-color: inherit;
+  outline-color: gray;
+  border: none;
+}
+
+.search_form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.search_wrapper input::placeholder {
+  color: #fff;
+}
+
+.loupe_btn_icon {
+  max-width: 20px;
+  height: 20px;
+}

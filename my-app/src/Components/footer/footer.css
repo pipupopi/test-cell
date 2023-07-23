@@ -1,0 +1,28 @@
+.footer_wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+}
+
+.footer_wrapper button {
+  color: black;
+  border: none;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  background-color: inherit;
+}
+
+.pagination_block {
+  color: #474955;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 137px;
+}
+
+.footer_wrapper span:active {
+  color: green;
+}

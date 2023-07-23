@@ -1,0 +1,31 @@
+.cell_item_block {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.id_block,
+.title_block,
+.description_block {
+  height: auto;
+  padding: 15px 8px 14px 12px;
+  border: 1px solid #e3e6ec;
+  border-top: none;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.id_block {
+  width: 112px;
+  text-align: center;
+}
+
+.title_block {
+  width: 529px;
+  border-left: none;
+}
+
+.description_block {
+  width: 443px;
+  border-left: none;
+}
