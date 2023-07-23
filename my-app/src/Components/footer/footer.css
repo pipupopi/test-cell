@@ -26,3 +26,7 @@
 .footer_wrapper span:active {
   color: green;
 }
+
+.footer_wrapper a {
+  margin-top: 55px;
+}
