@@ -37,7 +37,7 @@ function Footer() {
         </button>
       </Link>
       <span className={"pagination_block"}>
-        {currentPageNum.map((item, index) => {
+        {currentPageNum.map((_, index) => {
           const pageNumber = index + ONE_PAGE;
           return (
             <span
