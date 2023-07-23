@@ -6,6 +6,7 @@ import { initialStateInterface } from "../../redux/initialState";
 import { CELL_TITLES } from "../../utils/const";
 import { sortAlphabetically } from "../../utils/filter";
 import "./header.css";
+import { RESET_PAGES } from "../../redux/page";
 
 interface DataItem {
   body: string;
@@ -33,6 +34,7 @@ function Header() {
       setActiveKey(key);
       dispatch(SET_CURRENT_DATA(sorted));
     }
+    dispatch(RESET_PAGES);
   }
 
   return (

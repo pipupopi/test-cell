@@ -1,6 +1,7 @@
 export const initialState = {
   cellData: [],
   currentCellData: [],
+  page: 1,
 };
 
 export interface initialStateInterface {
@@ -17,5 +18,8 @@ export interface initialStateInterface {
       title: string;
       userId: number;
     }[];
+  };
+  pages: {
+    page: number;
   };
 }

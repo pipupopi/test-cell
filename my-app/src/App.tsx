@@ -6,11 +6,7 @@ import Search from "./Components/search/search";
 import ListItem from "./Components/table/list-item/list-item";
 import { SET_CURRENT_DATA, SET_DATA } from "./redux/data";
 import "./styles/globals.css";
-import {
-  API_URL,
-  FIRST_PAGE_ELEMENT,
-  MAX_PAGE_ELEMENTS,
-} from "./utils/const";
+import { API_URL } from "./utils/const";
 import { getDataReq } from "./utils/request";
 
 function App() {
@@ -19,12 +15,8 @@ function App() {
   useEffect(() => {
     const getData = async () => {
       const response = await getDataReq(API_URL);
-      const currentData = await response.slice(
-        FIRST_PAGE_ELEMENT,
-        MAX_PAGE_ELEMENTS
-      );
       dispatch(SET_DATA(await response));
-      dispatch(SET_CURRENT_DATA(await currentData));
+      dispatch(SET_CURRENT_DATA(await response));
     };
     getData();
   }, []);

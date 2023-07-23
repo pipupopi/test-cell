@@ -4,6 +4,7 @@ import { SET_CURRENT_DATA } from "../../redux/data";
 import { initialStateInterface } from "../../redux/initialState";
 import { formatText } from "../../utils/formatText";
 import "./search.css";
+import { RESET_PAGES } from "../../redux/page";
 
 function Search() {
   const dispatch = useDispatch();
@@ -20,6 +21,7 @@ function Search() {
         formatText(item.body).includes(textLower)
     );
     dispatch(SET_CURRENT_DATA(results));
+    dispatch(RESET_PAGES);
   };
 
   return (
